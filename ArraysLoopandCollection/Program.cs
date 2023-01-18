@@ -10,18 +10,18 @@ namespace ArraysLoopandCollection
                //ARRAYS
             static void Main(string[] args)
             {
-            int[] sayilar = { 10, 23, 24, 68, 79, 80, 64, 46, 53, 52, 40, 60, 90, 66, 88, 22, 44, 67 };
-            int sayac = 0;
-            int toplam = 0;
-            foreach (var sayi in sayilar)
+            int[] numbers = { 10, 23, 24, 68, 79, 80, 64, 46, 53, 52, 40, 60, 90, 66, 88, 22, 44, 67 };
+            int counter = 0;
+            int total = 0;
+            foreach (var number in numbers)
             {
-                if (sayi % 2 == 0)
+                if (number % 2 == 0)
                 {
-                    sayac++;
-                    Console.WriteLine(sayi);
+                    counter++;
+                    Console.WriteLine(number);
                 }
             }
-            Console.WriteLine("Çift sayı adedi:" + sayac);
+            Console.WriteLine("Number of even numbers:" + counter);
 
 
             Console.WriteLine("++++++++++++++++++++++++++");
@@ -53,22 +53,22 @@ namespace ArraysLoopandCollection
 
 
             //LOOPS
-            string[] sehirler = new string[5];
-            for (int i = 0; i < sehirler.Length; i++)
+            string[] cities = new string[5];
+            for (int i = 0; i < cities.Length; i++)
             {
-                Console.WriteLine("Şehir adını giriniz");
-                sehirler[i] = Console.ReadLine();
+                Console.WriteLine("Enter city name");
+                cities[i] = Console.ReadLine();
 
 
             }
-            Console.WriteLine("listelemek istediğiniz şehrin baş harfi");
+            Console.WriteLine("the initials of the city you want to list");
             char harf = Convert.ToChar(Console.ReadLine());
 
-            foreach (var sehir in sehirler)
+            foreach (var city in cities)
             {
-                if (sehir[0] ==harf)
+                if (city[0] ==letter)
                 {
-                    Console.WriteLine(sehir);
+                    Console.WriteLine(city);
 
                 }
             }
